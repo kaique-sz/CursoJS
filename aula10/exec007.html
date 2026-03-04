@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Valores</title>
+
+    <style>
+
+        body {
+
+            font-size: 1.6em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input {
+
+            width: 50px;
+        }
+
+        div#res {
+
+            margin-top: 20px;
+            width: 400px;
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="somar" onclick="clicar()">
+    <div id="res"></div>
+
+    <script>
+
+        function clicar() {
+
+            var tx1 = window.document.getElementById('txtn1')
+            var tx2 = window.document.getElementById('txtn2')
+            var res = window.document.getElementById('res')
+
+            var n1 = Number(tx1.value)
+            var n2 = Number(tx2.value)
+            var s = n1 + n2
+
+            res.innerText = `A soma entre ${n1} e ${n2} é igual a ${s}`
+        }
+    </script>
+</body>
+</html>
