@@ -20,6 +20,8 @@ section {
     width: 600px;
     height: 300px;
 
+    padding-left: 20px;
+
  
 
     background-color: white;
@@ -30,8 +32,12 @@ section {
     left: 50%;
 
     transform: translate(-50%, -50%);
+ 
+}
 
-    
+div {
+
+    text-align: center;
 }
 
 footer p {
